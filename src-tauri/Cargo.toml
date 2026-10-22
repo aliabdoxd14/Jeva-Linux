@@ -1,6 +1,6 @@
 [package]
 name = "jeva"
-version = "1.0.2"
+version = "1.0.0"
 description = "Jeva — a refined media client for Jellyfin, Emby and Plex"
 authors = ["Min Kim", "aliabdoxd14"]
 license = "MIT"

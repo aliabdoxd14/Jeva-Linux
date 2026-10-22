@@ -43,10 +43,9 @@ Windows
 
 | Format | File | Best for |
 | ------ | ---- | -------- |
-| Debian / Ubuntu | `jeva_1.0.2_amd64.deb` | `apt install ./jeva_*.deb` |
-| RPM | `jeva-1.0.2-1.x86_64.rpm` | Fedora, openSUSE, RHEL |
-| AppImage | `jeva_1.0.2_amd64.AppImage` | Any distro, no install needed |
-| Arch | `jeva-1.0.2-1-x86_64.pkg.tar.zst` | `pacman -U ./jeva-*.pkg.tar.zst` |
+| Debian / Ubuntu | `Jeva_1.0.0_amd64.deb` | `apt install ./Jeva_*.deb` |
+| RPM | `Jeva-1.0.0-1.x86_64.rpm` | Fedora, openSUSE, RHEL |
+| AppImage | `Jeva_1.0.0_amd64.AppImage` | Any distro, no install needed |
 
 ## Building from source
 
@@ -61,7 +60,6 @@ npm install
 
 # 3. Build
 npm run build:all          # .deb, .rpm and .AppImage
-npm run build:arch         # .pkg.tar.zst
 ```
 
 Artifacts land in `src-tauri/target/release/bundle/` and `artifacts/`.

@@ -37,15 +37,18 @@ for f in "$ART"/*.deb "$ART"/*.rpm "$ART"/*.AppImage "$ART"/*.pkg.tar.zst; do
         ar t "$f" 2>/dev/null | sed 's/^/    ar: /'
         payload=$(ar t "$f" 2>/dev/null | grep '^data.tar' | head -1)
         if [ -n "$payload" ]; then
-            ar p "$f" "$payload" 2>/dev/null | tar t 2>/dev/null | grep -E "usr/bin/jeva|\.desktop|icons/hicolor" | head -8 | sed 's/^/    /'
+            case "$payload" in
+            *.gz) flag="-tzf" ;;
+            *.xz) flag="-tJf" ;;
+            *)    flag="-tf" ;;
+            esac
+            ar p "$f" "$payload" 2>/dev/null | tar $flag - 2>/dev/null \
+                | grep -E "usr/bin/jeva|\.desktop|icons/hicolor" | head -8 | sed 's/^/    /'
         fi
         ;;
     *.rpm)
-        if command -v rpm2cpio >/dev/null 2>&1; then
-            rpm2cpio "$f" 2>/dev/null | cpio -it 2>/dev/null | grep -E "usr/bin/jeva|\.desktop|icons/hicolor" | head -8 | sed 's/^/    /'
-        else
-            echo "    (rpm2cpio unavailable)"
-        fi
+        bsdtar -tf "$f" 2>/dev/null \
+            | grep -E "usr/bin/jeva|\.desktop|icons/hicolor" | head -8 | sed 's/^/    /'
         ;;
     *.AppImage)
         if [ -x "$f" ]; then
@@ -62,12 +65,22 @@ done
 
 echo
 echo "== binary =="
-BIN="$BUNDLE/jeva"
+BIN="$ROOT/src-tauri/target/release/jeva"
 if [ -e "$BIN" ]; then
     file "$BIN" | sed 's/^/    /'
-    check "binary is a Linux ELF" test -x "$BIN"
+    check "binary is executable" test -x "$BIN"
+    check "binary is a Linux ELF" bash -c "file -b '$BIN' | grep -q ELF"
 else
     echo "    (no bundled binary at $BIN)"
+fi
+
+echo
+echo "== appimage smoke test =="
+APPIMAGE="$ART/Jeva_1.0.0_amd64.AppImage"
+if [ -x "$APPIMAGE" ]; then
+    check "AppImage reports a version" "$APPIMAGE" --appimage-version
+else
+    echo "    (skipped)"
 fi
 
 echo
