@@ -8,7 +8,7 @@
 <h1 align="center">Jeva</h1>
 
 <p align="center">
-  A customizable Windows client for Jellyfin.
+  A Perfect Windows client for Jellyfin.
 </p>
 
 <p align="center">
