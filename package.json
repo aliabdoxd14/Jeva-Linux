@@ -1,0 +1,27 @@
+{
+  "name": "jeva-linux",
+  "version": "1.0.2",
+  "private": true,
+  "description": "Linux port of Jeva, a refined media client for Jellyfin, Emby and Plex",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aliabdoxd14/Jeva-Linux"
+  },
+  "scripts": {
+    "sync": "node tools/sync-upstream.mjs",
+    "sync:tag": "node tools/sync-upstream.mjs --tag",
+    "tauri": "tauri",
+    "dev": "tauri dev",
+    "build": "tauri build",
+    "build:deb": "tauri build --bundles deb",
+    "build:rpm": "tauri build --bundles rpm",
+    "build:appimage": "tauri build --bundles appimage",
+    "build:all": "tauri build --bundles deb,rpm,appimage",
+    "build:arch": "bash packaging/arch/build-arch.sh"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.9.1"
+  }
+}

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>app.jeva</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT</project_license>
+
+  <name>Jeva</name>
+  <summary>A refined media client for Jellyfin, Emby and Plex</summary>
+
+  <description>
+    <p>
+      Jeva is a customizable media client for Jellyfin, Emby and Plex, designed
+      to make browsing and enjoying your personal media library feel like a
+      modern streaming service.
+    </p>
+    <ul>
+      <li>Modern, streaming-inspired interface</li>
+      <li>Customizable themes and layouts</li>
+      <li>Personalized home screen</li>
+      <li>Movie and TV show library browsing</li>
+      <li>Media filtering and sorting</li>
+      <li>Multiple interface languages</li>
+    </ul>
+  </description>
+
+  <launchable type="desktop-id">Jeva.desktop</launchable>
+
+  <categories>
+    <category>AudioVideo</category>
+    <category>Video</category>
+    <category>Player</category>
+  </categories>
+
+  <url type="homepage">https://github.com/aliabdoxd14/Jeva-Linux</url>
+  <url type="bugtracker">https://github.com/aliabdoxd14/Jeva-Linux/issues</url>
+  <url type="vcs-browser">https://github.com/aliabdoxd14/Jeva-Linux</url>
+  <url type="help">https://github.com/tearerry/Jeva/issues</url>
+
+  <developer id="app.jeva">
+    <name>Min Kim</name>
+  </developer>
+  <developer id="io.github.aliabdoxd14">
+    <name>aliabdoxd14</name>
+  </developer>
+
+  <content_rating type="oars-1.1" />
+
+  <releases>
+    <release version="1.0.2" date="2026-10-22">
+      <description>
+        <p>Linux port of Jeva v1.0.2, packaged for deb, rpm, AppImage, flatpak and Arch.</p>
+      </description>
+    </release>
+  </releases>
+</component>

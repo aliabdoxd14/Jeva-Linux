@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Name=Jeva
+Comment=A refined media client for Jellyfin, Emby and Plex
+Exec=jeva
+Icon=jeva
+Terminal=false
+Categories=AudioVideo;Video;
+Keywords=Jellyfin;Emby;Plex;Media;Movies;TV;Stream;
+StartupWMClass=jeva
+StartupNotify=true
+MimeType=video/mp4;video/x-matroska;video/webm;video/mpeg;audio/mpeg;audio/flac;

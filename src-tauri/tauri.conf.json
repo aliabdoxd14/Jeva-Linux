@@ -1,0 +1,74 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Jeva",
+  "version": "1.0.2",
+  "identifier": "app.jeva",
+  "build": {
+    "frontendDist": "../upstream-dist",
+    "devUrl": "http://localhost:1460",
+    "beforeDevCommand": "node tools/serve-dist.mjs"
+  },
+  "app": {
+    "withGlobalTauri": false,
+    "windows": [
+      {
+        "label": "main",
+        "title": "Jeva",
+        "width": 1440,
+        "height": 900,
+        "minWidth": 880,
+        "minHeight": 600,
+        "resizable": true,
+        "fullscreen": false,
+        "center": true,
+        "decorations": false,
+        "transparent": false,
+        "shadow": true,
+        "dragDropEnabled": true,
+        "visible": true,
+        "focus": true
+      }
+    ],
+    "security": {
+      "csp": "'self' ipc: http://ipc.localhost http: https: ws: wss: data: blob:",
+      "assetProtocol": {
+        "enable": false,
+        "scope": []
+      }
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["deb", "rpm", "appimage"],
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.png"
+    ],
+    "category": "Video",
+    "shortDescription": "A refined media client for Jellyfin, Emby and Plex",
+    "longDescription": "Jeva is a customizable media client for Jellyfin, Emby and Plex, featuring a modern, streaming-inspired interface.",
+    "homepage": "https://github.com/aliabdoxd14/Jeva-Linux",
+    "licenseFile": "../LICENSE",
+    "linux": {
+      "deb": {
+        "depends": []
+      },
+      "rpm": {
+        "depends": [],
+        "epoch": 0,
+        "release": "1"
+      },
+      "appimage": {
+        "bundleMediaFramework": false
+      }
+    }
+  },
+  "plugins": {
+    "updater": {
+      "pubkey": "RWTOqgAZzU/p1Xa6kHbnw9de3jblDHwiiRbCGVheAQhfFmaYB76CBFVC",
+      "endpoints": []
+    }
+  }
+}
