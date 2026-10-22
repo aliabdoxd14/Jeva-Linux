@@ -12,9 +12,9 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/tearerrry/Jeva/releases">Download</a>
+  <a href="https://github.com/tearerry/Jeva/releases">Download</a>
   ·
-  <a href="https://github.com/tearerrry/Jeva/issues">Report an Issue</a>
+  <a href="https://github.com/tearerry/Jeva/issues">Report an Issue</a>
 </p>
 
 
