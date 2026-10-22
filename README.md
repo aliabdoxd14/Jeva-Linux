@@ -42,4 +42,10 @@ Windows
 ## Disclaimer
 
 Jeva is an independent project and is not affiliated with or endorsed by the Jellyfin project.
-  
+
+
+## Developer Mode
+
+Jeva includes a hidden Developer Mode for advanced media library management, including refreshing metadata and editing media information.
+
+To enable Developer Mode, go to **Settings → About** and click the **Jeva icon** several times.
