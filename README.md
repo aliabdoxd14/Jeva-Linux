@@ -20,7 +20,7 @@
 
 # Jeva
 
-A customizable Linux client for Jellyfin, featuring a modern streaming-style interface.
+A customizable Linux/Windows client for Jellyfin, featuring a modern streaming-style interface.
 
 ## About
 
@@ -37,7 +37,8 @@ Jeva is an independent Jellyfin client for Linux, designed to make browsing and 
 
 ## Platform
 
-Linux
+Linux 
+Windows
 
 ## Disclaimer
 
