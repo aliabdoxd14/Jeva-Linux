@@ -20,11 +20,11 @@
 
 # Jeva
 
-A customizable Windows client for Jellyfin, featuring a modern streaming-style interface.
+A customizable Linux client for Jellyfin, featuring a modern streaming-style interface.
 
 ## About
 
-Jeva is an independent Jellyfin client for Windows, designed to make browsing and enjoying your personal media library feel like a modern streaming service.
+Jeva is an independent Jellyfin client for Linux, designed to make browsing and enjoying your personal media library feel like a modern streaming service.
 
 ## Features
 
@@ -37,13 +37,13 @@ Jeva is an independent Jellyfin client for Windows, designed to make browsing an
 
 ## Platform
 
-Windows
+Linux
 
 ## Disclaimer
 
 Jeva is an independent project and is not affiliated with or endorsed by the Jellyfin project.
 
-
+FORK FROM: https://github.com/tearerry/Jeva | The original project was made specifically for windows and this is a fan fork for linux 
 ## Developer Mode
 
 Jeva includes a hidden Developer Mode for advanced media library management, including refreshing metadata and editing media information.
