@@ -7,7 +7,7 @@
  * tauri-codegen embeds in the PE as a brotli-compressed blob table, so we can
  * recover it losslessly and rebuild the app for Linux.
  *
- *   node tools/sync-upstream.mjs [--tag v1.0.2] [--out upstream-dist] [--keep]
+ *   node tools/sync-upstream.mjs [--tag v1.0.5] [--out upstream-dist] [--keep]
  *
  * Steps: resolve release -> download installer -> unpack NSIS -> recover assets.
  */

@@ -1,7 +1,7 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
   "productName": "Jeva",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "identifier": "app.jeva",
   "build": {
     "frontendDist": "../upstream-dist",

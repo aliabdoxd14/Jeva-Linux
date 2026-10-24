@@ -43,9 +43,9 @@ Windows
 
 | Format | File | Best for |
 | ------ | ---- | -------- |
-| Debian / Ubuntu | `Jeva_1.0.0_amd64.deb` | `apt install ./Jeva_*.deb` |
-| RPM | `Jeva-1.0.0-1.x86_64.rpm` | Fedora, openSUSE, RHEL |
-| AppImage | `Jeva_1.0.0_amd64.AppImage` | Any distro, no install needed |
+| Debian / Ubuntu | `Jeva_1.0.5_amd64.deb` | `apt install ./Jeva_*.deb` |
+| RPM | `Jeva-1.0.5-1.x86_64.rpm` | Fedora, openSUSE, RHEL |
+| AppImage | `Jeva_1.0.5_amd64.AppImage` | Any distro, no install needed |
 
 ## Building from source
 
@@ -74,7 +74,7 @@ port at compile time.
 
 ```bash
 npm run sync            # latest upstream release
-npm run sync:tag v1.0.3 # a specific tag
+npm run sync:tag v1.0.5 # a specific tag
 ```
 
 To pick up a new upstream release, run `npm run sync`, rebuild, and commit the

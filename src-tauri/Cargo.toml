@@ -1,6 +1,6 @@
 [package]
 name = "jeva"
-version = "1.0.0"
+version = "1.0.5"
 description = "Jeva — a refined media client for Jellyfin, Emby and Plex"
 authors = ["Min Kim", "aliabdoxd14"]
 license = "MIT"
@@ -8,8 +8,8 @@ repository = "https://github.com/aliabdoxd14/Jeva-Linux"
 edition = "2021"
 rust-version = "1.77"
 
-# The upstream Windows build ships its version as "1.0.0"; keep the crate
-# version in lock-step so the generated package filenames line up.
+# Keep the crate version in lock-step with the upstream release tag so the
+# generated package filenames line up.
 [lib]
 name = "jeva_lib"
 crate-type = ["staticlib", "cdylib", "rlib"]

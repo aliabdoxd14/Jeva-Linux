@@ -76,7 +76,7 @@ fi
 
 echo
 echo "== appimage smoke test =="
-APPIMAGE="$ART/Jeva_1.0.0_amd64.AppImage"
+APPIMAGE="$ART/Jeva_1.0.5_amd64.AppImage"
 if [ -x "$APPIMAGE" ]; then
     check "AppImage reports a version" "$APPIMAGE" --appimage-version
 else
